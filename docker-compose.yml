@@ -1,0 +1,12 @@
+version: "3.9"
+services: 
+  moirae:
+    build: .
+    image: kuangda/moirae
+    ports: 
+      - "8787:8787"
+    environment: 
+      - PASSWORD=chad
+      - DISABLE_AUTH=true
+    volumes: 
+      - .:/home/rstudio
